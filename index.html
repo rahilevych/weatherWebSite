@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/null.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Weather dashboard</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="search-block">
+                <form class="search-block__bar">
+                    <input class="search" type="text" placeholder="Input your city here...">
+                    <button class="search-button" type="submit"><img src="/images/search.png" alt=""></button>
+                </form>
+            </div>
+            <div class="current-weather-block">
+                <div class="current-weather-block__content">
+                    <div class="current-weather-block__icon"></div>
+                    <div class="current-weather-block__temperature"></div>
+                    <div class="current-weather-block__city"></div>
+                    <div class="current-weather-block__time"></div>
+                    <div class="current-weather-block__day"></div>
+                </div>
+            </div>
+            <div class="details-block">
+                <div class="details-block__element">
+                    <div class="details-block__icon details-block__icon-humidity"></div>
+                    <div class="details-block__name">Humidity</div>
+                    <div class="details-block__value details-block__value-humidity"></div>
+                </div>
+                <div class="details-block__element">
+                    <div class="details-block__icon details-block__icon-uv"></div>
+                    <div class="details-block__name">UV-index</div>
+                    <div class="details-block__value details-block__value-uv"></div>
+                </div>
+                <div class="details-block__element">
+                    <div class="details-block__icon details-block__icon-sunrise"></div>
+                    <div class="details-block__name">Sunrise</div>
+                    <div class="details-block__value details-block__value-sunrise"></div>
+                </div>
+                <div class="details-block__element">
+                    <div class="details-block__icon details-block__icon-sunset"></div>
+                    <div class="details-block__name">Sunset</div>
+                    <div class="details-block__value details-block__value-sunset "></div>
+                </div>
+            </div>
+            <div class="forecast-block">
+            </div>
+        </div>
+        <footer>
+            <div> Icons made by <a href="https://www.freepik.com" title="Freepik"> Freepik </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>
+            <div> Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect"> Pixel perfect </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>
+        </footer>
+    </div>
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+
+</html>

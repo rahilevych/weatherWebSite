@@ -1,0 +1,291 @@
+body {
+  height: 100%;
+  background-color: #E0E5EC;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  gap: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  width: 1300px;
+  min-height: 100vh;
+  margin: 20px auto;
+}
+
+.search-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+  height: 70px;
+  width: 800px;
+}
+
+.search-block__bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 60px;
+  background: rgba(171, 181, 193, 0.25);
+  width: 500px;
+  height: 50px;
+  padding: 20px;
+}
+
+.search-block__bar input {
+  background: transparent;
+  font-size: 25px;
+  color: black;
+}
+
+.search-block__bar button {
+  background: transparent;
+}
+
+.current-weather-block {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
+  width: auto;
+  height: 320px;
+  background: url(/images/img1.png) center, #D9D9D9;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 16px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.current-weather-block__icon {
+  position: absolute;
+  left: 55px;
+  top: 55px;
+  width: 60px;
+  height: 60px;
+}
+
+.current-weather-block__content {
+  position: relative;
+  background: url(/images/img2.png) center, #D9D9D9;
+  width: 1230px;
+  height: 270px;
+  margin: 25px 35px;
+  border-radius: 8px;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  -webkit-filter: drop-shadow(0px 5px 20px rgba(58, 73, 96, 0.42));
+          filter: drop-shadow(0px 5px 20px rgba(58, 73, 96, 0.42));
+}
+
+.current-weather-block__temperature {
+  position: absolute;
+  font-family: Source Sans Pro;
+  font-weight: 300;
+  font-size: 112px;
+  line-height: 141px;
+  bottom: 50px;
+  left: 32px;
+}
+
+.current-weather-block__city {
+  position: absolute;
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 35px;
+  bottom: 28px;
+  left: 32px;
+}
+
+.current-weather-block__time {
+  position: absolute;
+  font-family: Source Sans Pro;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 35px;
+  bottom: 55px;
+  right: 32px;
+}
+
+.current-weather-block__day {
+  position: absolute;
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 35px;
+  bottom: 28px;
+  right: 32px;
+}
+
+.details-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #D8D8F0;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  background-color: #F4F4F4;
+  height: 250px;
+  width: 464px;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.details-block__element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px;
+  gap: 5px;
+  font-family: 'Source Sans Pro';
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.details-block__icon {
+  width: 32px;
+  height: 32px;
+}
+
+.details-block__icon-humidity {
+  background: url(/images/humidity.png);
+}
+
+.details-block__icon-uv {
+  background: url(/images/uv-index.png);
+}
+
+.details-block__icon-sunrise {
+  background: url(/images/sunrise.png);
+}
+
+.details-block__icon-sunset {
+  background: url(/images/sunset.png);
+}
+
+.details-block__value {
+  font-weight: 900;
+}
+
+.forecast-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 4;
+  border: 1px solid #D8D8F0;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  background-color: #F4F4F4;
+  width: 100%;
+  height: 250px;
+}
+
+.forecast-block__element {
+  font-family: 'Source Sans Pro';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.forecast-block__day {
+  font-weight: 900;
+}
+
+.forecast-block__degree {
+  font-weight: 900;
+}
+
+footer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+/*# sourceMappingURL=style.css.map */
