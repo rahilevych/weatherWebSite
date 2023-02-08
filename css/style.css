@@ -81,7 +81,7 @@ body {
   grid-row-end: 3;
   width: 300px;
   height: 200px;
-  background: url(/images/img1.png) center, #D9D9D9;
+  background: url(/weatherWebSite/images/img1.png) center, #D9D9D9;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 16px;
@@ -99,7 +99,7 @@ body {
 
 .current-weather-block__content {
   position: relative;
-  background: url(/images/img2.png) center, #D9D9D9;
+  background: url(/weatherWebSite/images/img2.png) center, #D9D9D9;
   width: 250px;
   height: 150px;
   margin: 25px auto;
@@ -214,19 +214,19 @@ body {
 }
 
 .details-block__icon-humidity {
-  background: url(/images/humidity.png);
+  background: url(/weatherWebSite/images/humidity.png);
 }
 
 .details-block__icon-uv {
-  background: url(/images/uv-index.png);
+  background: url(/weatherWebSite/images/uv-index.png);
 }
 
 .details-block__icon-sunrise {
-  background: url(/images/sunrise.png);
+  background: url(/weatherWebSite/images/sunrise.png);
 }
 
 .details-block__icon-sunset {
-  background: url(/images/sunset.png);
+  background: url(/weatherWebSite/images/sunset.png);
 }
 
 .details-block__value {
@@ -327,7 +327,7 @@ footer {
     top: 55px;
     width: 60px;
     height: 60px;
-    background: url(/images/cloud.png);
+    background: url(/weatherWebSite/images/cloud.png);
   }
   .current-weather-block__content {
     width: 400px;
@@ -406,16 +406,16 @@ footer {
     height: 32px;
   }
   .details-block__icon-humidity {
-    background: url(/images/humidity.png);
+    background: url(/weatherWebSite/images/humidity.png);
   }
   .details-block__icon-uv {
-    background: url(/images/uv-index.png);
+    background: url(/weatherWebSite/images/uv-index.png);
   }
   .details-block__icon-sunrise {
-    background: url(/images/sunrise.png);
+    background: url(/weatherWebSite/images/sunrise.png);
   }
   .details-block__icon-sunset {
-    background: url(/images/sunset.png);
+    background: url(/weatherWebSite/images/sunset.png);
   }
   .details-block__value {
     font-weight: 900;
