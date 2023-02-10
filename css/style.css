@@ -89,13 +89,7 @@ body {
     border-radius: 8px;
 }
 
-.current-weather-block__icon {
-    position: absolute;
-    left: 55px;
-    top: 55px;
-    width: 60px;
-    height: 60px;
-}
+
 
 .current-weather-block__content {
     position: relative;
