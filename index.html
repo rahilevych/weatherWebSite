@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
     <title>Weather dashboard</title>
 </head>
 
@@ -25,6 +27,7 @@
             <div class="current-weather-block">
                 <div class="current-weather-block__content">
                     <div class="current-weather-block__temperature"></div>
+                    <div class="current-weather-block__icon"></div>
                     <div class="current-weather-block__city"></div>
                     <div class="current-weather-block__time"></div>
                     <div class="current-weather-block__day"></div>
@@ -52,7 +55,8 @@
                     <div class="details-block__value details-block__value-sunset "></div>
                 </div>
             </div>
-            <div class="forecast-block">
+            <div class="swiper forecast-block ">
+                <div class="swiper-wrapper"></div>
             </div>
         </div>
         <footer>
@@ -62,7 +66,8 @@
     </div>
 
 
-
+    <script src="https://kit.fontawesome.com/c955956440.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 

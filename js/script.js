@@ -15,7 +15,27 @@ const currentLocation = document.querySelector('.current-weather-block__city');
 const currentTime = document.querySelector('.current-weather-block__time');
 const currentDay = document.querySelector('.current-weather-block__day');
 
-const forecastBlock = document.querySelector('.forecast-block');
+const forecastBlock = document.querySelector('.swiper-wrapper');
+const slider = new Swiper('.forecast-block', {
+
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 1,
+
+        },
+        // when window width is >= 480px
+        576: {
+            slidesPerView: 2,
+            spaceBetween: 30
+        },
+        // when window width is >= 640px
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        }
+    }
+})
 
 
 
@@ -52,7 +72,7 @@ function getWeatherdata() {
             removeAllChildNodes(forecastBlock)
             for (i = 0; i < data.forecast.forecastday.length; i++) {
                 forecastBlock.insertAdjacentHTML('beforeend',
-                    ` <div class="forecast-block__element">
+                    ` <div class="swiper-slide forecast-block__element ">
                     <div class="forecast-block__day">${ getdayOfWeek(countData(data.forecast.forecastday[i].date))}</div>
                     <div class="forecast-block__date"> ${countData(data.forecast.forecastday[i].date)[2] +' '+ getCurrentMonth(countData(data.forecast.forecastday[i].date))}</div>
                     <div class="forecast-block__icon "><img class='icon_img' src = '../images/day/${(data.forecast.forecastday[i].day.condition.icon).slice(-7)}'></div>
@@ -61,6 +81,8 @@ function getWeatherdata() {
             }
         });
 }
+
+
 
 function removeAllChildNodes(parent) {
     while (parent.firstChild) {
