@@ -16,26 +16,7 @@ const currentTime = document.querySelector('.current-weather-block__time');
 const currentDay = document.querySelector('.current-weather-block__day');
 
 const forecastBlock = document.querySelector('.swiper-wrapper');
-const slider = new Swiper('.forecast-block', {
 
-    breakpoints: {
-        // when window width is >= 320px
-        320: {
-            slidesPerView: 1,
-
-        },
-        // when window width is >= 480px
-        576: {
-            slidesPerView: 2,
-            spaceBetween: 30
-        },
-        // when window width is >= 640px
-        768: {
-            slidesPerView: 3,
-            spaceBetween: 30
-        }
-    }
-})
 
 
 
@@ -79,6 +60,26 @@ function getWeatherdata() {
                     <div class="forecast-block__degree">${Math.floor(data.forecast.forecastday[i].day.avgtemp_c)+'°'}</div>
                 </div>`)
             }
+        const slider = new Swiper('.forecast-block', {
+
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 1,
+
+        },
+        // when window width is >= 480px
+        576: {
+            slidesPerView: 2,
+            spaceBetween: 30
+        },
+        // when window width is >= 640px
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        }
+    }
+})
         });
 }
 
