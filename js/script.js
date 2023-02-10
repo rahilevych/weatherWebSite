@@ -46,7 +46,7 @@ function getWeatherdata() {
             uv.innerHTML = data.current.uv;
             sunrise.innerHTML = data.forecast.forecastday[0].astro.sunrise;
             sunset.innerHTML = data.forecast.forecastday[0].astro.sunset;
-            currentWeather.innerHTML = `${ data.current.temp_c +'°C'}`;
+            currentWeather.innerHTML = `${Math.floor( data.current.temp_c )+'°C'}`;
             currentLocation.innerHTML = data.location.name + ', ' + data.location.country + ', ' + data.location.tz_id;
             currentTime.innerHTML = getCurrentTime()
             currentDay.innerHTML = `${getdayOfWeek(countData(data.current.last_updated))  +', '+ countData(data.current.last_updated)[2] +' '+ getCurrentMonth(countData(data.current.last_updated))}`
