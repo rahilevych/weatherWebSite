@@ -75,7 +75,7 @@ function getWeatherdata() {
                     ` <div class="swiper-slide forecast-block__element ">
                     <div class="forecast-block__day">${ getdayOfWeek(countData(data.forecast.forecastday[i].date))}</div>
                     <div class="forecast-block__date"> ${countData(data.forecast.forecastday[i].date)[2] +' '+ getCurrentMonth(countData(data.forecast.forecastday[i].date))}</div>
-                    <div class="forecast-block__icon "><img class='icon_img' src = '../images/day/${(data.forecast.forecastday[i].day.condition.icon).slice(-7)}'></div>
+                    <div class="forecast-block__icon "><img class='icon_img' src = '/weatherWebSite/images/day/${(data.forecast.forecastday[i].day.condition.icon).slice(-7)}'></div>
                     <div class="forecast-block__degree">${Math.floor(data.forecast.forecastday[i].day.avgtemp_c)+'°'}</div>
                 </div>`)
             }
