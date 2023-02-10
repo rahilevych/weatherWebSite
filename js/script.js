@@ -46,17 +46,17 @@ function getWeatherdata() {
             uv.innerHTML = data.current.uv;
             sunrise.innerHTML = data.forecast.forecastday[0].astro.sunrise;
             sunset.innerHTML = data.forecast.forecastday[0].astro.sunset;
-            currentWeather.innerHTML = `${ data.current.temp_c +'°C'}`;
+            currentWeather.innerHTML = `${Math.floor( data.current.temp_c )+'°C'}`;
             currentLocation.innerHTML = data.location.name + ', ' + data.location.country + ', ' + data.location.tz_id;
             currentTime.innerHTML = getCurrentTime()
             currentDay.innerHTML = `${getdayOfWeek(countData(data.current.last_updated))  +', '+ countData(data.current.last_updated)[2] +' '+ getCurrentMonth(countData(data.current.last_updated))}`
             removeAllChildNodes(forecastBlock)
             for (i = 0; i < data.forecast.forecastday.length; i++) {
                 forecastBlock.insertAdjacentHTML('beforeend',
-                    ` <div class="swiper-slide forecast-block__element ">
+                    ` <div class=" forecast-block__element swiper-slide ">
                     <div class="forecast-block__day">${ getdayOfWeek(countData(data.forecast.forecastday[i].date))}</div>
                     <div class="forecast-block__date"> ${countData(data.forecast.forecastday[i].date)[2] +' '+ getCurrentMonth(countData(data.forecast.forecastday[i].date))}</div>
-                    <div class="forecast-block__icon "><img class='icon_img' src = '../images/day/${(data.forecast.forecastday[i].day.condition.icon).slice(-7)}'></div>
+                    <div class="forecast-block__icon "><img class='icon_img' src = '/weatherWebSite/images/day/${(data.forecast.forecastday[i].day.condition.icon).slice(-7)}'></div>
                     <div class="forecast-block__degree">${Math.floor(data.forecast.forecastday[i].day.avgtemp_c)+'°'}</div>
                 </div>`)
             }
