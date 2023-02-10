@@ -56,7 +56,7 @@ searchForm.addEventListener('submit', (e) => {
 
 function getWeatherdata() {
 
-    fetch(`http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${cityName}&days=7`)
+    fetch(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${cityName}&days=7`)
 
     .then(response => response.json())
         .then(data => {
